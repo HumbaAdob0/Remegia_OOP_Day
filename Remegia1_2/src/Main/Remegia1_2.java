@@ -42,6 +42,8 @@ public class Remegia1_2 {
             System.out.print("uWu");
         }
         
+        
+        
     }
     
 }
