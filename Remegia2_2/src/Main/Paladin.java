@@ -19,6 +19,7 @@ public Paladin(boolean hasResurrected, int health, int damage, int shield){
 public void receiveDamage(int damage){
 if(damage%2==0){
 damage/=2;
+damage-=shield;
 shield=-damage;
 super.receiveDamage(damage);
 }
