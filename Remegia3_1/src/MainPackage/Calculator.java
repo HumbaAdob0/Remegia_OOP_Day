@@ -2,7 +2,7 @@ package MainPackage;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class Calculator {
+public class Calculator implements ActionListener{
     
         JFrame frame;
 	JTextField textfield;
@@ -20,7 +20,7 @@ public class Calculator {
 		CalculatorGUI calc = new CalculatorGUI();
 	}
 	
-	public void actionPerformed(ActionEvent e) {
+	public void actionPerformed(ActionEvent e){
 		
 		for(int i=0;i<10;i++) {
 			if(e.getSource() == numberButtons[i]) {

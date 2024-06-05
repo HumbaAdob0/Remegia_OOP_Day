@@ -4,20 +4,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class CalculatorGUI implements ActionListener{
+public class CalculatorGUI extends Calculator{
 
-	JFrame frame;
-	JTextField textfield;
-	JButton[] numberButtons = new JButton[10];
-	JButton[] functionButtons = new JButton[9];
-	JButton addButton,subButton,mulButton,divButton;
-	JButton decButton, equButton, delButton, clrButton, negButton;
-	JPanel panel;
-	
-	Font myFont = new Font("Ink Free",Font.BOLD,30);
 	
 	
+	Font myFont = new Font("Arial",Font.BOLD,30);
 	
+		
 	CalculatorGUI(){
 		
 		frame = new JFrame("Calculator");
@@ -96,8 +89,5 @@ public class CalculatorGUI implements ActionListener{
 		frame.setVisible(true);
 	}
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    
 }
